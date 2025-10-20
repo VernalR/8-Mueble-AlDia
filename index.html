@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUEBLEALDIA</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h2>MUEBLEALDIA</h2>
+    <section id="mobiliarioForm" hiddem>
+        <h3 style="width: 250px;">Agregar <span id="mobiliarioForm_lblTipo"></span></h3>
+        <lable>Factura:
+            <input type="number" id="mobiliarioForm_inFactura"></input>
+        </lable>
+        <label>Madera:
+            <input type="number" id="mobiliarioForm_inMadera"></input>
+        </label>
+        <label hidden id="mobiliarioForm_divInSillas">Sillas:
+            <input type="number" id="mobiliarioForm_inSillas"></input>
+        </label>
+        <label hidden id="mobiliarioForm_divInTela">Tela:
+            <input type="number" id="mobiliarioForm_inTela"></input>
+        </label>
+        <div>
+            <button id="mobiliarioForm_btAceptarComedor" hidden>Aceptar</button>
+            <button id="mobiliarioForm_btAceptarMueble" hidden>Aceptar</button>
+            <button id="mobiliarioForm_btCancelar">Cancelar</button>
+        </div>
+    </section>
+    <section id="mainForm">
+        <h3>Mobiliario procesado</h3>
+        <table>
+            <thead>
+                <th>Factura</th>
+                <th>Madera</th>
+                <th>Sillas</th>
+                <th>Tela</th>
+                <th>PrecioM3</th>
+                <th>M3</th>
+                <th>Incremento</th>
+                <th>Precio</th>
+            </thead>
+            <tbody id="mainForm_dataMobiliarios"></tbody>
+        </table>
+        <div class="divBotones">
+            <button id="mainForm_btAgregarComedor">+Comedor</button>
+            <button id="mainForm_btAgregarMueble">+Mueble</button>
+        </div>
+        <h3>Informacion de la muebleria</h3>
+        <div class="divSalida">
+            <label>Tipo de mueble que mas dinero proporciono:
+                <span id="mainForm_lblProdMasGananciaGenero"></span>
+            </label>
+            <label>Porcentaje de comedores vendidos: %
+                <span id="mainForm_lblPorcentComedoresVendidos"></span>
+            </label>
+            <label>Monto total vendido: $
+                <span id="mainForm_lblMontoTotalVendido"></span>
+            </label>
+        </div>
+    </section>
+    <script type="module">
+        import Cl_index from "./dist/Cl_index.js";
+        new Cl_index()
+    </script>    
+</body>
+
+</html>

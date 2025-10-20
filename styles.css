@@ -1,0 +1,71 @@
+section {
+    border: 3px solid cadetblue;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 10px;
+    margin: 0 auto;
+}
+h2 {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+label {
+    margin-top: 1px;
+}
+
+h3 {
+  color: white;
+  background-color: rgb(0, 85, 110);
+  padding: 3px;
+  border-radius: 1cap;
+  text-align: center;
+  margin-top: 0px;
+}
+h4 {
+  margin-top: 1px;
+  margin-bottom: 0px;
+  font-style: italic;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+}
+button {
+  margin-top: 10px;
+  background-color: rgb(147, 245, 252);
+  border-color: cadetblue;
+  border-radius: 7px;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+input {
+  width: 100px;
+}
+table,
+th,
+td {
+  border: 1px solid cadetblue;
+  text-align: center;
+}
+#mobiliarioForm {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 250px;
+}
+#mainForm {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.colCurrency {
+  text-align: right;
+  padding-left: 10px;
+}
+.colNumber {
+  column-width: 50px;
+}
+.divSalida {
+  display: flex;
+  flex-direction: column;
+}
