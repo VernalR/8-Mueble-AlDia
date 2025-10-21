@@ -43,6 +43,7 @@ export default class Cl_mMueble extends Cl_mMobiliario {
         return {
             ...super.toJSON(),
             tela: this.tela,
+            incremento: this.incremento(),
         };
     }
 
