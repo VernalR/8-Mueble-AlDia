@@ -1,3 +1,4 @@
+import Cl_mComedor from "./Cl_mComedor.js";
 import Cl_mMobiliario from "./Cl_mMobiliario.js";
 
 export default class Cl_mMuebleria {
@@ -8,7 +9,7 @@ export default class Cl_mMuebleria {
     private acTotalVendido: number = 0;
     procesarMobiliario(mobiliario: Cl_mMobiliario){
         this.contProdVendidos++;
-        if(mobiliario.tipoMobiliario() === 1){
+        if(mobiliario instanceof Cl_mComedor){
             this.contComedoresVendidos++;
             this.acGananciaComedores += mobiliario.precioMobiliario();
         }else{

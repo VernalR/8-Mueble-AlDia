@@ -19,9 +19,6 @@ export default class Cl_mComedor extends Cl_mMobiliario {
     precioMobiliario() {
         return this.precioM3() * this.m3();
     }
-    tipoMobiliario() {
-        return 1;
-    }
     toJSON() {
         return Object.assign(Object.assign({}, super.toJSON()), { sillas: this.sillas });
     }

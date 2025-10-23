@@ -33,9 +33,6 @@ export default class Cl_mMobiliario {
     precioMobiliario() {
         return 0;
     }
-    tipoMobiliario() {
-        return 0;
-    }
     toJSON() {
         return {
             factura: this.factura,

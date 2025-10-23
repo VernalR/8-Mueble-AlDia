@@ -29,9 +29,6 @@ export default class Cl_mMueble extends Cl_mMobiliario {
     precioMobiliario() {
         return this.precioM3() + this.incremento();
     }
-    tipoMobiliario() {
-        return 2;
-    }
     toJSON() {
         return Object.assign(Object.assign({}, super.toJSON()), { tela: this.tela, incremento: this.incremento() });
     }
